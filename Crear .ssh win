@@ -1,0 +1,29 @@
+git creacion de clave publica y privada
+
+
+1- )
+git config --list
+---no deberia salir ningun suser.name ni user.email
+
+2- )
+git config --global user.name HenryCova
+git config --global user.email HenryCova
+
+3-) 
+git config --list
+-- deberia salir nuestro usuario 
+
+user.name=HenryCova
+user.email=HenryCova
+
+4-)
+ir a --> c:Users/Usuario(tu)/.ssh
+(en linux -->)cd ~/.ssh/
+
+5-)
+ssh-keygen -t rsa -b 4096 -C "herycov@gmail.com"
+
+
+6- ) (linux)
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
